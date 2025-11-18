@@ -11,6 +11,8 @@ __pycache__/
 .Python
 build/
 dist/
+*.egg-info/
+*.egg
 
 # virtual environment
 venv/
@@ -24,3 +26,18 @@ env/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+
+# Test artifacts and generated data
+test_scripts/
+screenshots/
+test_results/
+knowledge_base/
+.pytest_cache/
+
+# Environment files
+.env
+
+# Coverage
+.coverage
+htmlcov/
+*.cover
