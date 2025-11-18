@@ -20,7 +20,8 @@ def test_interpret_navigate():
     
     assert len(actions) > 0
     assert actions[0].type == ActionType.NAVIGATE
-    assert "example.com" in actions[0].value
+    # Check the full URL value instead of substring
+    assert actions[0].value == "https://example.com"
 
 
 def test_interpret_click():
