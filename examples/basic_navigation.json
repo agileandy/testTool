@@ -1,0 +1,52 @@
+{
+  "name": "basic_navigation",
+  "description": "Basic navigation and page verification test",
+  "mode": "dumb",
+  "steps": [
+    {
+      "description": "Navigate to Example.com",
+      "action": {
+        "type": "navigate",
+        "selector": null,
+        "value": "https://example.com",
+        "text": null,
+        "timeout": 30000,
+        "metadata": {}
+      },
+      "expected_outcome": "Page loads successfully",
+      "screenshot": false
+    },
+    {
+      "description": "Wait for page to fully load",
+      "action": {
+        "type": "wait",
+        "selector": null,
+        "value": "load",
+        "text": null,
+        "timeout": 30000,
+        "metadata": {}
+      },
+      "expected_outcome": "Page is fully loaded",
+      "screenshot": false
+    },
+    {
+      "description": "Verify page title is present",
+      "action": {
+        "type": "assert_element",
+        "selector": "h1",
+        "value": null,
+        "text": null,
+        "timeout": 30000,
+        "metadata": {}
+      },
+      "expected_outcome": "Page title element exists",
+      "screenshot": true
+    }
+  ],
+  "metadata": {
+    "author": "testTool",
+    "created": "2024-01-01",
+    "tags": ["basic", "navigation", "example"]
+  },
+  "created_at": "2024-01-01T00:00:00"
+}

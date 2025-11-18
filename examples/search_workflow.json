@@ -1,0 +1,65 @@
+{
+  "name": "search_workflow",
+  "description": "Demonstrates searching on a website",
+  "mode": "dumb",
+  "steps": [
+    {
+      "description": "Navigate to search page",
+      "action": {
+        "type": "navigate",
+        "selector": null,
+        "value": "https://www.google.com",
+        "text": null,
+        "timeout": 30000,
+        "metadata": {}
+      },
+      "expected_outcome": "Search page loads",
+      "screenshot": false
+    },
+    {
+      "description": "Wait for search box to be ready",
+      "action": {
+        "type": "wait",
+        "selector": null,
+        "value": "load",
+        "text": null,
+        "timeout": 30000,
+        "metadata": {}
+      },
+      "expected_outcome": "Page is interactive",
+      "screenshot": false
+    },
+    {
+      "description": "Type search query",
+      "action": {
+        "type": "type",
+        "selector": "textarea[name='q'], input[name='q']",
+        "value": "browser automation",
+        "text": null,
+        "timeout": 30000,
+        "metadata": {}
+      },
+      "expected_outcome": "Query is entered in search box",
+      "screenshot": false
+    },
+    {
+      "description": "Take screenshot of search results",
+      "action": {
+        "type": "screenshot",
+        "selector": null,
+        "value": "search_results",
+        "text": null,
+        "timeout": 30000,
+        "metadata": {}
+      },
+      "expected_outcome": "Screenshot captured",
+      "screenshot": true
+    }
+  ],
+  "metadata": {
+    "author": "testTool",
+    "created": "2024-01-01",
+    "tags": ["search", "interaction", "example"]
+  },
+  "created_at": "2024-01-01T00:00:00"
+}
